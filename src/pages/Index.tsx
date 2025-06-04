@@ -277,7 +277,9 @@ const Index = () => {
                 {TOKENS.slice(0, 4).map((token) => (
                   <div key={token.symbol} className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl">{token.logo}</span>
+                      <div className="w-8 h-8 flex items-center justify-center">
+                        <span className="text-2xl">{token.logo}</span>
+                      </div>
                       <div>
                         <div className="font-semibold text-white">{token.symbol}</div>
                         <div className="text-sm text-gray-400">{token.name}</div>
