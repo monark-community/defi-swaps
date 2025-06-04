@@ -49,7 +49,7 @@ const PriceChart = ({ fromToken, toToken }: PriceChartProps) => {
             {fromToken.symbol}/{toToken.symbol} Price Chart
           </CardTitle>
           <div className="flex items-center gap-2">
-            <Badge variant="secondary" className="bg-blue-600/20 text-blue-300">
+            <Badge variant="secondary" className="bg-slate-600/20 text-slate-300">
               24H
             </Badge>
             <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white">
@@ -109,10 +109,10 @@ const PriceChart = ({ fromToken, toToken }: PriceChartProps) => {
                 <Line 
                   type="monotone" 
                   dataKey="price" 
-                  stroke="#3b82f6" 
+                  stroke="#64748b" 
                   strokeWidth={2}
                   dot={false}
-                  activeDot={{ r: 4, fill: '#3b82f6' }}
+                  activeDot={{ r: 4, fill: '#64748b' }}
                 />
               </LineChart>
             </ResponsiveContainer>
